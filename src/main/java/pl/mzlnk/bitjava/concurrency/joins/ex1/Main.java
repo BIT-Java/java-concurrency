@@ -10,7 +10,7 @@ public class Main {
 
         for(int i = 0; i < 3; i++) {
             threads[i].start();
-            // threads[i].join();
+            threads[i].join();
         }
     }
 

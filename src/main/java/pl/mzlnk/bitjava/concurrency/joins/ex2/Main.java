@@ -9,7 +9,7 @@ public class Main {
         Task parallelTask = new ParallelTask();
         Task sequentialTask = new SequentialTask();
 
-        // parallelTask.execute();
+        parallelTask.execute();
         // sequentialTask.execute();
     }
 

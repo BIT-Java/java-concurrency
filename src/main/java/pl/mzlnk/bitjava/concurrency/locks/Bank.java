@@ -29,13 +29,14 @@ public class Bank {
             System.out.print(Thread.currentThread());
 
             accounts[from] -= amount;
-            accounts[to] += amount;
+
 
             System.out.print(TRANSFER_MSG
                     .replaceFirst("\\?", String.valueOf(amount))
                     .replaceFirst("\\?", String.valueOf(from))
                     .replaceFirst("\\?", String.valueOf(to)));
 
+            accounts[to] += amount;
 
             System.out.println("Total bank balance: " + this.getTotalBalance());
 

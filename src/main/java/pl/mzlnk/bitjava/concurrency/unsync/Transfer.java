@@ -11,7 +11,6 @@ public class Transfer implements Runnable {
     @Override
     public void run() {
         try {
-
             while (true) {
                 int to = (int) (bank.size() * Math.random());
                 double amount = 1000 * Math.random();

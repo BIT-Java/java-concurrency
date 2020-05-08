@@ -14,7 +14,7 @@ public class Transfer implements Runnable {
 
             while (true) {
                 int to = (int) (bank.size() * Math.random());
-                double amount = 1000 * Math.random();
+                double amount = 3000 * Math.random();
 
                 this.bank.transfer(this.from, to, amount);
 
